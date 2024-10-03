@@ -19,9 +19,7 @@ CREATE TABLE Doctor_Patient ( doctor_id INT, patient_id INT, date_of_visit DATE,
                                                                  PRIMARY KEY (doctor_id,
                                                                               patient_id));
 
-
 CREATE TABLE Visits ( id INT PRIMARY KEY,
                                      doctor_id INT, patient_id INT, date DATE,
                      FOREIGN KEY (doctor_id) REFERENCES Doctors(id),
                      FOREIGN KEY (patient_id) REFERENCES Patients(id));
-
