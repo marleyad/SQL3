@@ -27,7 +27,7 @@ CREATE TABLE Matches ( id INT PRIMARY KEY,
                       FOREIGN KEY (referee_id) REFERENCES Referees(id));
 
 
-CREATE TABLE Leagues ( id INT PRIMARY KEY,
+CREATE TABLE Leagues ( id INT PRIMARY KEY, 
                                       name VARCHAR(255));
 
 
